@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Rootlayout from "./App.jsx";
 import HomePage from "./Pages/HomePage.jsx";
+import CropDetailspage from "./Pages/CropDetailspage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
         index: true,
         Component: HomePage,
       },{
-        path:'/cropDetails'
+        path:'/cropDetails',
+        Component:CropDetailspage
       }
     ],
   },
